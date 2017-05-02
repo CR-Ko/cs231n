@@ -270,10 +270,10 @@ class TwoLayerNet(object):
     ###########################################################################
     h = np.maximum(0, X.dot(self.params['W1']) + self.params['b1'])
     scores = h.dot(self.params['W2']) + self.params['b2']
-    print('scores')
-    print( scores )
+    #print('scores')
+    #print( scores )
     y_pred = np.argmax(scores, axis=1)
-    print(y_pred)
+    #print(y_pred)
     #h1 = X.dot(self.params['W1']) + self.params['b1']
     #y_pred = h1.dot(self.params['W2']) + self.params['b2']
     #print(y_pred)
